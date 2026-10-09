@@ -4,12 +4,14 @@ public class Show
 		private String title;
 		private String genre;
 		private int numberOfSeasonsAired;
+		String yearsAired;
 		
-		public Show(String title, String genre, int numberOfSeasonsAired)
+		public Show(String title, String genre, int numberOfSeasonsAired, String yearsAired)
 		{
 			this.title = title;
 			this.genre = genre;
 			this.numberOfSeasonsAired = numberOfSeasonsAired;
+			this.yearsAired = yearsAired;
 		}
 
 		public String getTitle()
@@ -40,6 +42,16 @@ public class Show
 		public void setNumberOfSeasonsAired(int numberOfSeasonsAired)
 			{
 				this.numberOfSeasonsAired = numberOfSeasonsAired;
+			}
+		
+		public String getYearsAired()
+			{
+				return yearsAired;
+			}
+		
+		public void setYearsAired(String yearsAired)
+			{
+				this.yearsAired = yearsAired;
 			}
 		
 	}
