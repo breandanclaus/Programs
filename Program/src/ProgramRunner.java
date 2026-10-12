@@ -9,8 +9,10 @@ public class ProgramRunner
 				Grid.display();
 				changeFirst(tvShows);
 				printList(tvShows);
+				Grid.display();
 				deleteLongest(tvShows);
 				printList(tvShows);
+				Grid.display();
 
 			}
 
@@ -39,9 +41,9 @@ public class ProgramRunner
 			{
 				for (int i = 0; i < tvShows.size(); i++)
 					{
-						Grid.grid[i][0] = "Title: " + tvShows.get(i).getTitle() + ", ";
-						Grid.grid[i][1] = "Genre: " + tvShows.get(i).getGenre() + ",";
-						Grid.grid[i][2] = " Number of Seasons: " + tvShows.get(i).getNumberOfSeasonsAired() + ",";
+						Grid.grid[i][0] = "Title: " + tvShows.get(i).getTitle();
+						Grid.grid[i][1] = "Genre: " + tvShows.get(i).getGenre();
+						Grid.grid[i][2] = " Number of Seasons: " + tvShows.get(i).getNumberOfSeasonsAired();
 						Grid.grid[i][3] = " Years Aired: " + tvShows.get(i).getYearsAired();
 					}
 			}
