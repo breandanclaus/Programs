@@ -16,5 +16,6 @@ public class Grid
 				System.out.println("----------------------------------------------------------------------");
 				System.out.println("|" + grid[4][0] + "|" + grid[4][1] + "|" + grid[4][2] + "|" + grid[4][3] + "|");
 				System.out.println("----------------------------------------------------------------------");
+				System.out.println("Obvious Change");
 			}
 	}
